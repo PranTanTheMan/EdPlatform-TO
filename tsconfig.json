@@ -1,0 +1,52 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/components/side-bar.jsx",
+    "src/components/course-preview.jsx",
+    "src/pages/login.jsx",
+    "src/components/header.jsx",
+    "src/pages/index.jsx",
+    "src/pages/internships.jsx",
+    "src/pages/settings.jsx",
+    "src/pages/courses/courses.jsx",
+    "src/pages/_document.jsx",
+    "src/pages/_app.jsx",
+    "src/pages/api/auth/register.js",
+    "src/pages/api/auth/login.js",
+    "src/middlewares/isAuthenticated.js",
+    "src/pages/api/admin/course/[course]/chapter/[chapter]/edit.js",
+    "src/pages/api/admin/course/[course]/chapter/[chapter]/delete.js",
+    "src/pages/api/admin/course/[course]/chapter/create.js",
+    "src/pages/api/admin/course/[course]/delete.js",
+    "src/pages/api/admin/course/[course]/edit.js",
+    "src/pages/api/admin/course/create.js",
+    "src/pages/api/admin/createUser.js",
+    "src/pages/api/hello.js",
+    "src/pages/api/courses/[course]/[chapter]/[chapter].js",
+    "src/pages/api/courses/[course]/index.js",
+    "src/pages/api/courses/index.js",
+    "src/utils/slug.js"
+  ],
+  "exclude": ["node_modules"]
+}

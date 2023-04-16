@@ -1,0 +1,33 @@
+body {
+  background-color: #060e17 !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+code{
+  background-color:#05101D!important;
+  margin-bottom:10px; 
+  border-radius: 6px !important;
+  color:whitesmoke !important;
+}
+p {
+  color:#A7B2FF;
+}
+h2,h1,h3 {
+  color:#A7B2FF!important;
+}
+::-webkit-scrollbar-track {
+  background: rgb(15, 7, 40);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(32, 42, 81);
+  border-radius: 5px;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(32, 42, 81) #222;
+}
