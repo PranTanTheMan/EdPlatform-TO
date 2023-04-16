@@ -54,11 +54,11 @@ const Settings = () => {
               icon: AiFillSetting,
               isActive: true,
             },
-            {
-              href: "https://techoptimum.org/discord",
-              label: "Discord Server",
-              icon: FaDiscord,
-            },
+            // {
+            //   href: "https://techoptimum.org/discord",
+            //   label: "Discord Server",
+            //   icon: FaDiscord,
+            // },
           ]}
         />
         <Box px="2rem" py="3rem">

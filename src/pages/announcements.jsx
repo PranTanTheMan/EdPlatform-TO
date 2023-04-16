@@ -40,11 +40,11 @@ const AnnouncementsList = () => {
               icon: BsFillFlagFill,
             },
             { href: "/settings", label: "Settings", icon: AiFillSetting },
-            {
-              href: "https://techoptimum.org/discord",
-              label: "Discord Server",
-              icon: FaDiscord,
-            },
+            // {
+            //   href: "https://techoptimum.org/discord",
+            //   label: "Discord Server",
+            //   icon: FaDiscord,
+            // },
             {
               href: "/announcements",
               label: "Announcements",
