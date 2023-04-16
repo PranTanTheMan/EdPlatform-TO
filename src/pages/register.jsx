@@ -175,7 +175,7 @@ const Register = () => {
               type="submit"
               colorScheme="blue"
               onClick={handleSubmit}
-              isLoading={isLoading} 
+              isLoading={isLoading}
             >
               Register
             </Button>
@@ -190,7 +190,9 @@ const Register = () => {
       ) : (
         <Stack>
           <Text color="primary">You are logged in as {user?.email}</Text>
-          <Button colorScheme="blue" onClick={logout}>Logout</Button>
+          <Button colorScheme="blue" onClick={logout}>
+            Logout
+          </Button>
         </Stack>
       )}
     </Stack>

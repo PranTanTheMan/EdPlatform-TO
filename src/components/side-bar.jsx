@@ -71,28 +71,32 @@ const Sidebar = ({ links }) => {
           background="blue.900"
           color="primary"
           _hover={{
-       
             color: "primary",
           }}
         />
-        
       )}
-      <Drawer size="full" background="secondary" placement="left" onClose={onClose} isOpen={isOpen}>
+      <Drawer
+        size="full"
+        background="secondary"
+        placement="left"
+        onClose={onClose}
+        isOpen={isOpen}
+      >
         <DrawerOverlay />
-        <DrawerContent  background="secondary">
+        <DrawerContent background="secondary">
           <DrawerCloseButton color="primary" />
-          <Heading  pt="3rem" pl="2rem" color="primary"> Tech Optimum</Heading>
+          <Heading pt="3rem" pl="2rem" color="primary">
+            {" "}
+            Tech Optimum
+          </Heading>
           <Box
-          
-           pt="1rem !important"
-           pl="2rem"
-          
-          
+            pt="1rem !important"
+            pl="2rem"
             background="secondary"
             fontSize={{ base: "sm", md: "md" }}
             zIndex="sticky"
           >
-            <SidebarContent  links={links} />
+            <SidebarContent links={links} />
           </Box>
         </DrawerContent>
       </Drawer>
@@ -104,8 +108,6 @@ const Sidebar = ({ links }) => {
           position="sticky"
           top="0"
           height="calc(100vh)"
-
-         
           background="secondary"
           overflowY="auto"
           fontSize={{ base: "sm", md: "md" }}
