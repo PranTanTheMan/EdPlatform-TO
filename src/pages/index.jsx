@@ -74,11 +74,11 @@ const Home = () => {
                 icon: BsFillFlagFill,
               },
               { href: "/settings", label: "Settings", icon: AiFillSetting },
-              {
-                href: "https://techoptimum.org/discord",
-                label: "Discord Server",
-                icon: FaDiscord,
-              },
+              // {
+              //   href: "https://techoptimum.org/discord",
+              //   label: "Discord Server",
+              //   icon: FaDiscord,
+              // },
             ]}
           />
           <Box px="2rem" py="2rem">
@@ -90,12 +90,18 @@ const Home = () => {
             >
               {Greeting()}, {userName}
             </Heading>
-            
+
             <Heading fontSize="4xl" color="primary" fontWeight="light" mb={3}>
               Overview
             </Heading>
-            <Streak/>
-            <Heading mt={8} fontSize="3xl" color="primary" fontWeight="light" mb={4}>
+            <Streak />
+            <Heading
+              mt={8}
+              fontSize="3xl"
+              color="primary"
+              fontWeight="light"
+              mb={4}
+            >
               In Progress Courses
             </Heading>
             <Wrap spacing="20px" pb="1rem">
@@ -105,7 +111,13 @@ const Home = () => {
                   .filter((course) => course.enrolled && course.progress < 100)
                   .map((course, index) => <Course key={index} {...course} />)}
             </Wrap>
-            <Heading fontSize="3xl" color="primary" fontWeight="light" mt={4} mb={4}>
+            <Heading
+              fontSize="3xl"
+              color="primary"
+              fontWeight="light"
+              mt={4}
+              mb={4}
+            >
               Other Courses
             </Heading>
             <Wrap spacing="20px" pb="1rem">
