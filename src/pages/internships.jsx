@@ -69,7 +69,7 @@ function InternshipPost({ post }) {
         key={post.id}
         display="block"
       >
-        <Box  display="block">
+        <Box display="block">
           <Heading fontWeight="light" color="primary" fontSize="2xl">
             {post.title}
           </Heading>
@@ -93,25 +93,24 @@ function InternshipPost({ post }) {
                 {post.title}
               </Heading>
               <Badge colorScheme="teal">{post.category}</Badge>
-    
 
               <Flex alignItems="center">
                 <Text fontSize="2xl" color="primary">
                   <AiOutlineInfoCircle />
                 </Text>
                 <Text pl="4px" pt="4px" color="primary">
-                {post.description}
+                  {post.description}
                 </Text>
               </Flex>
               <Flex alignItems="center">
                 <Text fontSize="2xl" color="primary">
-                <HiOutlineLocationMarker />
+                  <HiOutlineLocationMarker />
                 </Text>
                 <Text pl="4px" pt="4px" color="primary">
-                {post.location}
+                  {post.location}
                 </Text>
               </Flex>
-            
+
               <Flex alignItems="center">
                 <Text fontSize="2xl" color="primary">
                   <BiMoneyWithdraw />
@@ -136,7 +135,6 @@ function InternshipPost({ post }) {
               </Button>
             </ModalFooter>
             <Text pb="12px" textAlign={"center"} fontSize="sm" color="primary">
-      
               This internship was posted on {post.date}
             </Text>
           </ModalContent>

@@ -12,7 +12,7 @@ import {
   InputLeftElement,
   Heading,
   Icon,
-  useToast
+  useToast,
 } from "@chakra-ui/react";
 import { FaEnvelope } from "react-icons/fa";
 import { AiFillLock } from "react-icons/ai";
@@ -168,8 +168,12 @@ const Login = () => {
         </form>
       ) : (
         <Stack>
-          <Text color="primary">You are logged in as<b> {user?.email}</b></Text>
-          <Button colorScheme="blue" onClick={logout}>Logout</Button>
+          <Text color="primary">
+            You are logged in as<b> {user?.email}</b>
+          </Text>
+          <Button colorScheme="blue" onClick={logout}>
+            Logout
+          </Button>
         </Stack>
       )}
     </Stack>
